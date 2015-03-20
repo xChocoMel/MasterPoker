@@ -6,37 +6,96 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="603.0" prefWidth="1028.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="masterpoker.GameSummaryController">
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="815.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="masterpoker.GameSummaryController">
   <children>
     <ImageView fitHeight="98.03861236572266" fitWidth="322.9254267655131" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../../../../../../Dropbox/SE41%20Groepsopdrachten/Producten/logo.png" />
       </image>
     </ImageView>
-    <TabPane focusTraversable="true" layoutX="0.0" layoutY="125.0" mouseTransparent="false" prefHeight="478.0" prefWidth="1028.0" rotateGraphic="false" tabClosingPolicy="UNAVAILABLE">
+    <TabPane focusTraversable="true" layoutX="0.0" layoutY="125.0" mouseTransparent="false" prefHeight="379.0" prefWidth="815.0" rotateGraphic="false" tabClosingPolicy="UNAVAILABLE">
       <tabs>
         <Tab text="Home">
           <content>
-            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="423.0" prefWidth="1014.0" />
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="437.0" prefWidth="815.0">
+              <children>
+                <HBox layoutX="30.0" layoutY="150.0" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                    <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                      <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="159.0" layoutX="0.0" layoutY="0.0" strokeType="INSIDE" width="250.0">
+                          <fill>
+                            <Color blue="0.937" green="0.937" red="0.937" fx:id="x1" />
+                          </fill>
+                          <stroke>
+                            <Color blue="0.875" green="0.875" red="0.875" fx:id="x2" />
+                          </stroke>
+                        </Rectangle>
+                        <Button layoutX="81.0" layoutY="108.0" mnemonicParsing="false" text="Meedoen" />
+                        <Label layoutX="87.0" layoutY="25.0" text="Roomnaam" />
+                        <Label layoutX="79.0" layoutY="67.0" text="Aantal spelers" />
+                      </children>
+                    </AnchorPane>
+                    <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                      <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="159.0" layoutX="0.0" layoutY="0.0" stroke="$x2" strokeType="INSIDE" width="250.0" />
+                        <Button layoutX="81.0" layoutY="108.0" mnemonicParsing="false" text="Meedoen" />
+                        <Label layoutX="87.0" layoutY="25.0" text="Roomnaam" />
+                        <Label layoutX="79.0" layoutY="67.0" text="Aantal spelers" />
+                      </children>
+                    </AnchorPane>
+                    <AnchorPane prefHeight="200.0" prefWidth="250.0">
+                      <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="159.0" layoutX="0.0" layoutY="0.0" stroke="$x2" strokeType="INSIDE" width="250.0" />
+                        <Button layoutX="81.0" layoutY="108.0" mnemonicParsing="false" text="Meedoen" />
+                        <Label layoutX="87.0" layoutY="25.0" text="Roomnaam" />
+                        <Label layoutX="79.0" layoutY="67.0" text="Aantal spelers" />
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </HBox>
+                <Label layoutX="30.0" layoutY="30.0" text="Single player" />
+                <Label layoutX="30.0" layoutY="70.0" text="Multiplayer" />
+                <Button layoutX="200.0" layoutY="30.0" mnemonicParsing="false" text="Single player spel starten" />
+                <Button layoutX="200.0" layoutY="70.0" mnemonicParsing="false" text="Snel spelen" />
+                <Label layoutX="200.0" layoutY="110.0" text="of kies een game:" />
+              </children>
+            </AnchorPane>
           </content>
         </Tab>
         <Tab text="Alle games">
           <content>
-            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ListView layoutX="30.0" layoutY="60.0" prefHeight="255.0" prefWidth="558.0" />
+                <Label layoutX="30.0" layoutY="30.0" text="Alle multiplayer games" underline="true" />
+                <Button layoutX="607.0" layoutY="247.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="182.0" text="Nieuwe game starten" />
+                <Button layoutX="607.0" layoutY="288.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="182.0" text="Meedoen aan game" />
+              </children>
+            </AnchorPane>
           </content>
         </Tab>
         <Tab text="Tutorial">
           <content>
-            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ImageView fitHeight="280.6311397034838" fitWidth="469.0" layoutX="173.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@../../../Tutorial.png" />
+                  </image>
+                </ImageView>
+              </children>
+            </AnchorPane>
           </content>
         </Tab>
       </tabs>
     </TabPane>
-    <AnchorPane blendMode="SRC_OVER" cache="false" disable="false" focusTraversable="false" layoutX="667.0" layoutY="34.0" mouseTransparent="false" opacity="1.0" prefHeight="52.0" prefWidth="339.0" style="&#10;">
+    <AnchorPane blendMode="SRC_OVER" cache="false" disable="false" focusTraversable="false" layoutX="446.0" layoutY="34.0" mouseTransparent="false" opacity="1.0" prefHeight="52.0" prefWidth="339.0" style="&#10;">
       <children>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efefef" height="52.0" layoutX="0.0" layoutY="0.0" stroke="#bfbfbf" strokeType="INSIDE" width="339.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="52.0" layoutX="0.0" layoutY="0.0" stroke="#bfbfbf" strokeType="INSIDE" width="339.0" />
         <Label layoutX="135.0" layoutY="16.0" text="Coins: 100" />
         <Button layoutX="233.0" layoutY="13.0" mnemonicParsing="false" text="Uitloggen" />
         <Label layoutX="14.0" layoutY="16.0" text="Username" />
