@@ -9,11 +9,11 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="815.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="masterpoker.GameSummaryController">
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="815.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="masterpoker.MenuController">
   <children>
     <ImageView fitHeight="98.03861236572266" fitWidth="322.9254267655131" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
       <image>
-        <Image url="@../../../../../../Dropbox/SE41%20Groepsopdrachten/Producten/logo.png" />
+        <Image url="@images/Logo.jpg" />
       </image>
     </ImageView>
     <TabPane focusTraversable="true" layoutX="0.0" layoutY="125.0" mouseTransparent="false" prefHeight="379.0" prefWidth="815.0" rotateGraphic="false" tabClosingPolicy="UNAVAILABLE">
