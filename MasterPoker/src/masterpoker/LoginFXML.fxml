@@ -19,7 +19,7 @@
     <TextField fx:id="tfPassword" layoutX="150.0" layoutY="198.0" prefWidth="273.0" promptText="Voer uw wachtwoord in" />
     <Label layoutX="22.0" layoutY="164.0" text="Gebruikersnaam:" />
     <Label layoutX="22.0" layoutY="201.0" text="Wachtwoord:" />
-    <Button id="aanmeldButton" fx:id="btnRegister" layoutX="150.0" layoutY="239.0" mnemonicParsing="false" onAction="#register" prefWidth="98.0" text="Aanmelden" />
-    <Button id="loginButton" fx:id="btnLogin" layoutX="325.0" layoutY="239.0" mnemonicParsing="false" onAction="#login" prefWidth="98.0" text="Inloggen" />
+    <Button id="aanmeldButton" fx:id="btnRegister" layoutX="150.0" layoutY="239.0" mnemonicParsing="false" onAction="#register" prefWidth="127.0" text="Aanmelden" />
+    <Button id="loginButton" fx:id="btnLogin" layoutX="296.0" layoutY="239.0" mnemonicParsing="false" onAction="#login" prefWidth="127.0" text="Inloggen" />
   </children>
 </AnchorPane>
