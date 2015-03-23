@@ -6,22 +6,26 @@
 
 package masterpoker;
 
+import java.awt.Button;
 import java.net.URL;
-import java.rmi.RemoteException;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javax.swing.JOptionPane;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
  *
  * @author Melanie
  */
+
 public class LoginController implements Initializable
-{
+{    
+    @FXML Button inlogButton;
+    @FXML Button registerButton;
+    @FXML TextField tfPassword;
+    @FXML TextField tfUsername;
+
     private MasterPoker main;
     private String user;
     private int coins;
@@ -29,13 +33,27 @@ public class LoginController implements Initializable
     public void setApp(MasterPoker application)
     {
         this.main = application;
-    }
-
+    }    
+    
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }       
+    } 
+
+    public void register(){
+        main.goToSignin();
+    }
+    
+    public void login(){
+        if(tfUsername.equals("Melanie") && tfPassword.equals("Brian")){
+            main.goToMenu("Melanie", 500);
+        }
+        else{
+            tfUsername.setText("");
+            tfPassword.setText("");
+        }
+    }     
 }
