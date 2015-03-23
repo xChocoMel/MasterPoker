@@ -40,7 +40,7 @@
         </Label>
       </children>
     </Pane>
-    <Pane layoutX="332.0" layoutY="14.0" prefHeight="244.0" prefWidth="498.0">
+    <Pane layoutX="331.0" layoutY="25.0" prefHeight="244.0" prefWidth="498.0">
       <children>
         <ImageView fitHeight="240.10763150952707" fitWidth="364.0" layoutX="61.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
           <image>

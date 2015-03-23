@@ -34,7 +34,7 @@ public class MasterPoker extends Application
         try
         {
             this.stage = stage;
-            this.stage.setTitle("RealTimeRegistration");
+            this.stage.setTitle("MasterPoker");
             this.stage.setMinWidth(200);
             this.stage.setMinHeight(200);
             goToLogin();          
@@ -59,6 +59,7 @@ public class MasterPoker extends Application
         }
         catch (Exception ex)
         {
+            System.out.println(ex.toString());
             Logger.getLogger(MasterPoker.class.getName()).log(Level.SEVERE, null, ex);
         }
     }

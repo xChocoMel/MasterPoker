@@ -8,7 +8,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="442.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="443.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="masterpoker.LoginController">
   <children>
     <ImageView fitHeight="121.99998474121094" fitWidth="401.85083594205287" layoutX="22.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
       <image>
@@ -19,7 +19,7 @@
     <TextField layoutX="150.0" layoutY="198.0" prefWidth="273.0" promptText="Voer uw wachtwoord in" />
     <Label layoutX="22.0" layoutY="164.0" text="Gebruikersnaam:" />
     <Label layoutX="22.0" layoutY="201.0" text="Wachtwoord:" />
-    <Button id="aanmeldButton" fx:id="registerButton" layoutX="150.0" layoutY="239.0" mnemonicParsing="false" onAction="#register" prefWidth="98.0" text="Aanmelden" />
-    <Button fx:id="loginButton" layoutX="325.0" layoutY="239.0" mnemonicParsing="false" onAction="#login" prefWidth="98.0" text="Inloggen" />
+    <Button id="aanmeldButton" fx:id="registerButton" layoutX="150.0" layoutY="239.0" mnemonicParsing="false" onAction="#register" prefWidth="138.0" text="Aanmelden" />
+    <Button fx:id="loginButton" layoutX="298.0" layoutY="239.0" mnemonicParsing="false" onAction="#login" prefWidth="125.0" text="Inloggen" />
   </children>
 </AnchorPane>
