@@ -17,6 +17,12 @@ import javafx.fxml.Initializable;
  */
 public class SigninController implements Initializable
 {
+    private MasterPoker main;
+    
+    public void setApp(MasterPoker application)
+    {
+        this.main = application;
+    }
 
     /**
      * Initializes the controller class.
@@ -25,5 +31,4 @@ public class SigninController implements Initializable
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
 }
