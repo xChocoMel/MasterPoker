@@ -35,24 +35,24 @@
             <Image url="@images/poker-table.png" />
           </image>
         </ImageView>
-        <Label layoutX="204.0" layoutY="0.0" text="Speler 2">
+        <Label fx:id="txtSpeler2" layoutX="204.0" layoutY="0.0" text="Speler 2">
           <font>
             <Font size="16.0" fx:id="x1" />
           </font>
         </Label>
-        <Label font="$x1" layoutX="22.0" layoutY="282.0" text="Speler 6" />
-        <Label font="$x1" layoutX="22.0" layoutY="15.0" text="Speler 1" />
-        <Label font="$x1" layoutX="385.0" layoutY="275.0" text="Speler 4" />
-        <Label font="$x1" layoutX="205.0" layoutY="296.0" text="Speler 5" />
-        <Label font="$x1" layoutX="366.0" layoutY="14.0" prefHeight="23.9609375" prefWidth="58.0" text="Speler 3" textFill="BLACK" />
+        <Label fx:id="txtSpeler6" font="$x1" layoutX="22.0" layoutY="282.0" text="Speler 6" />
+        <Label fx:id="txtSpeler1" font="$x1" layoutX="22.0" layoutY="15.0" text="Speler 1" />
+        <Label fx:id="txtSpeler4" font="$x1" layoutX="385.0" layoutY="275.0" text="Speler 4" />
+        <Label fx:id="txtSpeler5" font="$x1" layoutX="205.0" layoutY="296.0" text="Speler 5" />
+        <Label fx:id="txtSpeler3" font="$x1" layoutX="366.0" layoutY="14.0" prefHeight="23.9609375" prefWidth="58.0" text="Speler 3" textFill="BLACK" />
       </children>
     </Pane>
     <Pane layoutX="333.0" layoutY="369.0" prefHeight="144.0" prefWidth="417.104736328125">
       <children>
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efefef" height="144.0" layoutX="0.0" layoutY="0.0" stroke="#bfbfbf" strokeType="INSIDE" width="418.0" />
-        <Button layoutX="135.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Inzetten" />
-        <Button layoutX="23.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Passen" />
-        <Button layoutX="245.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.00009999999747" text="Meegaan" />
+        <Button fx:id="btnInzetten" layoutX="135.0" layoutY="64.0" mnemonicParsing="false" onAction="#inzetten" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Inzetten" />
+        <Button fx:id="btnPassen" layoutX="23.0" layoutY="64.0" mnemonicParsing="false" onAction="#passen" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Passen" />
+        <Button fx:id="btnMeegaan" layoutX="245.0" layoutY="64.0" mnemonicParsing="false" onAction="#meegaan" prefHeight="26.951171875" prefWidth="94.00009999999747" text="Meegaan" />
         <CheckBox layoutX="23.0" layoutY="104.0" mnemonicParsing="false" text="Altijd meegaan" />
         <Label fx:id="txtCoins" font="$x1" layoutX="23.0" layoutY="23.0" text="Coins:" />
       </children>
