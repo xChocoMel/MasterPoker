@@ -27,7 +27,7 @@
         <Image url="@images/Logo.jpg" />
       </image>
     </ImageView>
-    <Button layoutX="76.0" layoutY="167.0" mnemonicParsing="false" text="Terug naar menu" />
+    <Button layoutX="76.0" layoutY="167.0" mnemonicParsing="false" onAction="#quitGame" text="Terug naar menu" />
     <Pane layoutX="301.0" layoutY="23.0" prefHeight="331.0" prefWidth="450.0">
       <children>
         <ImageView fitHeight="275.1374215813638" fitWidth="417.1047058105469" layoutX="17.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
@@ -54,7 +54,7 @@
         <Button layoutX="23.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Passen" />
         <Button layoutX="245.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.00009999999747" text="Meegaan" />
         <CheckBox layoutX="23.0" layoutY="104.0" mnemonicParsing="false" text="Altijd meegaan" />
-        <Label font="$x1" layoutX="23.0" layoutY="23.0" text="Coins:" />
+        <Label fx:id="txtCoins" font="$x1" layoutX="23.0" layoutY="23.0" text="Coins:" />
       </children>
     </Pane>
   </children>

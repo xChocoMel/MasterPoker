@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
@@ -52,12 +53,14 @@ public class LoginController implements Initializable
     {
         if(tfUsername.getText().equals("Melanie") && tfPassword.getText().equals("Brian"))
         {
+            JOptionPane.showMessageDialog(null, "Succesvol ingelogd");
             user = "Melanie";
             coins = 500;
             main.goToMenu(this.user, this.coins);
         }
         else
         {
+            JOptionPane.showMessageDialog(null, "Uw inloggevens zijn onjuist, probeer het opnieuw");
             tfUsername.setText("");
             tfPassword.setText("");
         }

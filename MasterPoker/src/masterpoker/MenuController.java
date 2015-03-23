@@ -43,7 +43,10 @@ public class MenuController implements Initializable
     {
         this.main = application;
         this.user = user;
-        this.coins = coins;         
+        this.coins = coins;  
+        
+        tfUser.setText(this.user);
+        tfCoins.setText("Coins: " + this.coins);
     }
     
     /**
@@ -51,10 +54,7 @@ public class MenuController implements Initializable
      */
     @Override
     public void initialize(URL url, ResourceBundle rb)
-    {
-        tfUser.setText(this.user);
-        tfCoins.setText("Coins: " + this.coins);
-        
+    { 
         g = new ArrayList();
         g.add("Room1, aantal spelers: 5");
         g.add("Room2, aantal spelers: 2");

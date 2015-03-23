@@ -8,7 +8,9 @@ package masterpoker;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 
 /**
  * FXML Controller class
@@ -17,6 +19,8 @@ import javafx.fxml.Initializable;
  */
 public class MultiplayerController implements Initializable
 {
+    @FXML Label txtCoins;
+    
     private MasterPoker main;
     private String user;
     private int coins;
@@ -26,6 +30,8 @@ public class MultiplayerController implements Initializable
         this.main = application;
         this.user = user;
         this.coins = coins;
+        
+        txtCoins.setText("Coins: " + this.coins);
     }
 
     /**
@@ -34,6 +40,10 @@ public class MultiplayerController implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }   
     
+    public void quitGame()
+    {
+        main.goToMenu(user, coins);
+    }
 }
