@@ -26,8 +26,8 @@ import javafx.scene.control.Tab;
  */
 public class MenuController implements Initializable
 {
-    @FXML Label tfUser;
-    @FXML Label tfCoins;    
+    @FXML Label lbUser;
+    @FXML Label lbCoins;    
     @FXML Tab tabHome;
     @FXML Tab tabGames;
     @FXML Tab tabTutorial;    
@@ -59,13 +59,13 @@ public class MenuController implements Initializable
         this.user = user;
         this.coins = coins;  
         
-        tfUser.setText(this.user);
+        lbUser.setText(this.user);
         
         games = new ArrayList();
         
         if (main.getLanguage().equals("dutch"))
         {
-            tfCoins.setText("Munten: " + this.coins);
+            lbCoins.setText("Munten: " + this.coins);
             tabGames.setText("Alle spellen");
             btnSingle.setText("Single player spel staren");
             btnFastMulti.setText("Snel spelen");
@@ -89,7 +89,7 @@ public class MenuController implements Initializable
         }
         else if (main.getLanguage().equals("english"))
         {
-            tfCoins.setText("Coins: " + this.coins);
+            lbCoins.setText("Coins: " + this.coins);
             tabGames.setText("All games");
             btnSingle.setText("Start single player game");
             btnFastMulti.setText("Fast play");
@@ -111,9 +111,6 @@ public class MenuController implements Initializable
             games.add("Room4, number of players: 4");
             games.add("Room5, number of players: 3");
         }
-        
-        
-        
         
         oGames = FXCollections.observableList(games);        
         lvGames.setItems(oGames);

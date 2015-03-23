@@ -50,7 +50,7 @@
                     <AnchorPane prefHeight="200.0" prefWidth="250.0">
                       <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="159.0" layoutX="0.0" layoutY="0.0" stroke="$x2" strokeType="INSIDE" width="250.0" />
-                        <Button layoutX="81.0" layoutY="108.0" mnemonicParsing="false" onAction="#startMultiplayer" text="Meedoen" />
+                        <Button fx:id="btnJoin3" layoutX="81.0" layoutY="108.0" mnemonicParsing="false" onAction="#startMultiplayer" text="Meedoen" />
                         <Label layoutX="101.0" layoutY="25.0" text="Room3" />
                         <Label fx:id="lbPlayers3" layoutX="71.0" layoutY="67.0" text="Aantal spelers: 4" />
                       </children>
@@ -84,7 +84,7 @@
               <children>
                 <ImageView fitHeight="280.6311397034838" fitWidth="469.0" layoutX="173.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                   <image>
-                    <Image url="@../../../Tutorial.png" />
+                    <Image url="@images/Tutorial.png" />
                   </image>
                 </ImageView>
               </children>
@@ -96,9 +96,9 @@
     <AnchorPane blendMode="SRC_OVER" cache="false" disable="false" focusTraversable="false" layoutX="446.0" layoutY="34.0" mouseTransparent="false" opacity="1.0" prefHeight="52.0" prefWidth="339.0" style="&#10;">
       <children>
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="52.0" layoutX="0.0" layoutY="0.0" stroke="#bfbfbf" strokeType="INSIDE" width="339.0" />
-        <Label fx:id="tfCoins" layoutX="135.0" layoutY="16.0" text="Coins: 100" />
+        <Label id="tfCoins" fx:id="lbCoins" layoutX="135.0" layoutY="16.0" text="Coins: 100" />
         <Button fx:id="btnLogout" layoutX="233.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="Uitloggen" />
-        <Label fx:id="tfUser" layoutX="14.0" layoutY="16.0" text="Username" />
+        <Label id="tfUser" fx:id="lbUser" layoutX="14.0" layoutY="16.0" text="Username" />
         <Separator layoutX="116.0" layoutY="6.0" orientation="VERTICAL" prefHeight="39.961395263671875" />
       </children>
     </AnchorPane>

@@ -14,6 +14,8 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
@@ -28,6 +30,18 @@ public class MultiplayerController implements Initializable
     @FXML Label txtCoins;
     @FXML ListView lvChat;
     @FXML TextField tfMessage;
+    @FXML Button btnMenu;
+    @FXML Button btnSend;
+    @FXML Button btnFold;
+    @FXML Button btnCall;
+    @FXML Button btnRaise;
+    @FXML CheckBox chAuto;
+    @FXML Label lbPlayer1;
+    @FXML Label lbPlayer2;
+    @FXML Label lbPlayer3;
+    @FXML Label lbPlayer4;
+    @FXML Label lbPlayer5;
+    @FXML Label lbPlayer6;
     
     private MasterPoker main;
     private String user;
@@ -40,9 +54,40 @@ public class MultiplayerController implements Initializable
     {
         this.main = application;
         this.user = user;
-        this.coins = coins;
+        this.coins = coins;   
         
-        txtCoins.setText("Coins: " + this.coins);
+        lbPlayer1.setText(this.user);
+        
+        if (main.getLanguage().equals("dutch"))
+        {
+            txtCoins.setText("Munten: " + this.coins);
+            btnMenu.setText("Terug naar menu");
+            btnSend.setText("Versturen");
+            btnFold.setText("Passen");
+            btnCall.setText("Meegaan");
+            btnRaise.setText("Inzetten");
+            chAuto.setText("Altijd meegaan");
+            lbPlayer2.setText("Speler 2");
+            lbPlayer3.setText("Speler 3");
+            lbPlayer4.setText("Speler 4");
+            lbPlayer5.setText("Speler 5");
+            lbPlayer6.setText("Speler 6");
+        }
+        else if (main.getLanguage().equals("english"))
+        {
+            txtCoins.setText("Coins: " + this.coins);
+            btnMenu.setText("Back to menu");
+            btnSend.setText("Send");
+            btnFold.setText("Fold");
+            btnCall.setText("Call");
+            btnRaise.setText("Raise");
+            chAuto.setText("Always call");
+            lbPlayer2.setText("Player 2");
+            lbPlayer3.setText("Player 3");
+            lbPlayer4.setText("Player 4");
+            lbPlayer5.setText("Player 5");
+            lbPlayer6.setText("Player 6");
+        }
     }
 
     /**

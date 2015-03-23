@@ -75,21 +75,45 @@ public class LoginController implements Initializable
     {
         if(tfUsername.getText().equals("Melanie") && tfPassword.getText().equals("wachtwoord"))
         {
-            JOptionPane.showMessageDialog(null, "Succesvol ingelogd");
+            if (main.getLanguage().equals("dutch"))
+            {
+                JOptionPane.showMessageDialog(null, "Succesvol ingelogd");
+            }
+            else if (main.getLanguage().equals("english"))
+            {
+                JOptionPane.showMessageDialog(null, "Log in succesful");
+            }
+            
             user = "Melanie";
             coins = 500;
             main.goToMenu(this.user, this.coins);
         }
         else if(tfUsername.getText().equals("Jos") && tfPassword.getText().equals("ww123"))
         {
-            JOptionPane.showMessageDialog(null, "Succesvol ingelogd");
+            if (main.getLanguage().equals("dutch"))
+            {
+                JOptionPane.showMessageDialog(null, "Succesvol ingelogd");
+            }
+            else if (main.getLanguage().equals("english"))
+            {
+                JOptionPane.showMessageDialog(null, "Log in succesful");
+            }
+            
             user = "Jos";
             coins = 700;
             main.goToMenu(this.user, this.coins);
         }
         else
         {
-            JOptionPane.showMessageDialog(null, "Uw inloggevens zijn onjuist, probeer het opnieuw");
+            if (main.getLanguage().equals("dutch"))
+            {
+                JOptionPane.showMessageDialog(null, "Uw inloggevens zijn onjuist, probeer het opnieuw");
+            }
+            else if (main.getLanguage().equals("english"))
+            {
+                JOptionPane.showMessageDialog(null, "Your sign in information is incorrect, try it again");
+            }            
+            
             tfUsername.setText("");
             tfPassword.setText("");
         }
