@@ -6,42 +6,44 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="488.0" prefWidth="840.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="masterpoker.SingleplayerController">
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="770.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="masterpoker.SingleplayerController">
   <children>
-    <ImageView fitHeight="74.96537540163816" fitWidth="246.9254150390625" layoutX="14.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="74.96537540163816" fitWidth="246.9254150390625" layoutX="28.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@images/Logo.jpg" />
       </image>
     </ImageView>
     <Button layoutX="81.0" layoutY="167.0" mnemonicParsing="false" text="Terug naar menu" />
-    <Pane layoutX="442.0" layoutY="240.0" prefHeight="200.0" prefWidth="363.0001220703125">
+    <Pane layoutX="306.0" layoutY="23.0" prefHeight="331.0" prefWidth="450.0">
       <children>
-        <Button layoutX="150.0" layoutY="111.0" mnemonicParsing="false" prefHeight="23.9609375" prefWidth="75.0" text="Inzetten" />
-        <Button layoutX="28.0" layoutY="111.0" mnemonicParsing="false" prefHeight="23.9609375" prefWidth="75.0" text="Passen" />
-        <Button layoutX="256.0" layoutY="111.0" mnemonicParsing="false" prefHeight="23.9609375" prefWidth="75.00009999999747" text="Meegaan" />
-        <CheckBox layoutX="32.0" layoutY="163.0" mnemonicParsing="false" text="Altijd meegaan" />
-        <Label layoutX="40.0" layoutY="36.0" text="Coins:">
-          <font>
-            <Font size="16.0" fx:id="x1" />
-          </font>
-        </Label>
-      </children>
-    </Pane>
-    <Pane layoutX="307.0" layoutY="32.0" prefHeight="244.0" prefWidth="498.0">
-      <children>
-        <ImageView fitHeight="240.10763150952707" fitWidth="364.0" layoutX="61.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="275.1374215813638" fitWidth="417.1047058105469" layoutX="17.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
           <image>
             <Image url="@images/poker-table.png" />
           </image>
         </ImageView>
-        <Label font="$x1" layoutX="261.0" layoutY="3.0" text="CPU 1" />
-        <Label font="$x1" layoutX="52.0" layoutY="209.0" text="CPU 3" />
-        <Label font="$x1" layoutX="23.0" layoutY="14.0" text="Speler 1" />
-        <Label font="$x1" layoutX="396.0" layoutY="209.0" text="CPU5" />
-        <Label font="$x1" layoutX="261.0" layoutY="213.0" text="CPU 4" />
-        <Label font="$x1" layoutX="408.0" layoutY="13.0" prefHeight="23.9609375" prefWidth="65.0" text="CPU 2" textFill="BLACK" />
+        <Label layoutX="204.0" layoutY="0.0" text="CPU 1">
+          <font>
+            <Font size="16.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="22.0" layoutY="282.0" text="CPU 5" />
+        <Label font="$x1" layoutX="22.0" layoutY="15.0" text="Speler 1" />
+        <Label font="$x1" layoutX="385.0" layoutY="275.0" text="CPU 3" />
+        <Label font="$x1" layoutX="205.0" layoutY="296.0" text="CPU 4" />
+        <Label font="$x1" layoutX="366.0" layoutY="14.0" prefHeight="23.9609375" prefWidth="58.0" text="CPU 2" textFill="BLACK" />
+      </children>
+    </Pane>
+    <Pane layoutX="328.0" layoutY="369.0" prefHeight="144.0" prefWidth="417.104736328125">
+      <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efefef" height="144.0" layoutX="0.0" layoutY="0.0" stroke="#bfbfbf" strokeType="INSIDE" width="418.0" />
+        <Button layoutX="135.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Inzetten" />
+        <Button layoutX="23.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Passen" />
+        <Button layoutX="245.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.00009999999747" text="Meegaan" />
+        <CheckBox layoutX="23.0" layoutY="104.0" mnemonicParsing="false" text="Altijd meegaan" />
+        <Label font="$x1" layoutX="23.0" layoutY="23.0" text="Coins:" />
       </children>
     </Pane>
   </children>

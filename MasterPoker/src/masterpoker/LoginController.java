@@ -6,11 +6,11 @@
 
 package masterpoker;
 
-import java.awt.Button;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 /**
@@ -43,17 +43,21 @@ public class LoginController implements Initializable
         // TODO
     } 
 
-    public void register(){
+    public void register()
+    {
         main.goToSignin();
     }
     
-    public void login(){
-        if(tfUsername.getText().equals("Melanie") && tfPassword.getText().equals("Brian")){
+    public void login()
+    {
+        if(tfUsername.getText().equals("Melanie") && tfPassword.getText().equals("Brian"))
+        {
             user = "Melanie";
             coins = 500;
             main.goToMenu(this.user, this.coins);
         }
-        else{
+        else
+        {
             tfUsername.setText("");
             tfPassword.setText("");
         }
