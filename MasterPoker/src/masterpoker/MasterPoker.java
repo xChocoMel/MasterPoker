@@ -27,10 +27,13 @@ import javafx.stage.Stage;
 public class MasterPoker extends Application
 {
     private Stage stage;
+    private String language;
 
     @Override
     public void start(Stage stage) throws Exception 
     {
+        language = "dutch";
+        
         try
         {
             this.stage = stage;
@@ -177,6 +180,16 @@ public class MasterPoker extends Application
     public Stage getstage()
     {
         return this.stage;
+    }
+    
+    public String getLanguage()
+    {
+        return this.language;
+    }
+    
+    public void setLanguage(String language)
+    {
+        this.language = language;
     }
     
     /**
