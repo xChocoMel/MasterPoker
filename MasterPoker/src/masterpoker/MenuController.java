@@ -36,8 +36,8 @@ public class MenuController implements Initializable
     private String user;
     private int coins;
     
-    private List<String> g;
-    private ObservableList<String> games;
+    private List<String> games;
+    private ObservableList<String> oGames;
     
     public void setApp(MasterPoker application, String user, int coins)
     {
@@ -55,16 +55,15 @@ public class MenuController implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle rb)
     { 
-        g = new ArrayList();
-        g.add("Room1, aantal spelers: 5");
-        g.add("Room2, aantal spelers: 2");
-        g.add("Room3, aantal spelers: 4");
-        g.add("Room4, aantal spelers: 4");
-        g.add("Room5, aantal spelers: 3");
+        games = new ArrayList();
+        games.add("Room1, aantal spelers: 5");
+        games.add("Room2, aantal spelers: 2");
+        games.add("Room3, aantal spelers: 4");
+        games.add("Room4, aantal spelers: 4");
+        games.add("Room5, aantal spelers: 3");
         
-        games = FXCollections.observableList(g);
-        
-        lvGames.setItems(games);
+        oGames = FXCollections.observableList(games);        
+        lvGames.setItems(oGames);
     }  
     
     public void startSingleplayer()

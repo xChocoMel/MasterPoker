@@ -49,11 +49,18 @@ public class LoginController implements Initializable
     
     public void login()
     {
-        if(tfUsername.getText().equals("Melanie") && tfPassword.getText().equals("Brian"))
+        if(tfUsername.getText().equals("Melanie") && tfPassword.getText().equals("wachtwoord"))
         {
             JOptionPane.showMessageDialog(null, "Succesvol ingelogd");
             user = "Melanie";
             coins = 500;
+            main.goToMenu(this.user, this.coins);
+        }
+        else if(tfUsername.getText().equals("Jos") && tfPassword.getText().equals("ww123"))
+        {
+            JOptionPane.showMessageDialog(null, "Succesvol ingelogd");
+            user = "Jos";
+            coins = 700;
             main.goToMenu(this.user, this.coins);
         }
         else

@@ -13,11 +13,11 @@
   <children>
     <Pane layoutX="1.0" layoutY="326.0" prefHeight="198.0" prefWidth="290.0">
       <children>
-        <Button layoutX="200.0" layoutY="165.0" mnemonicParsing="false" text="Verstuur" />
-        <TextField layoutX="14.0" layoutY="162.0" prefWidth="178.0" />
-        <ScrollPane layoutX="17.0" layoutY="14.0" prefHeight="144.0001220703125" prefWidth="266.0">
+        <Button layoutX="200.0" layoutY="165.0" mnemonicParsing="false" onAction="#sendChatmessage" text="Verstuur" />
+        <TextField fx:id="tfMessage" layoutX="14.0" layoutY="162.0" prefWidth="178.0" />
+        <ScrollPane id="spChat" layoutX="17.0" layoutY="14.0" prefHeight="144.0001220703125" prefWidth="266.0">
           <content>
-            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="173.0" prefWidth="247.0" />
+            <ListView fx:id="lvChat" prefHeight="200.0" prefWidth="246.9254150390625" />
           </content>
         </ScrollPane>
       </children>
