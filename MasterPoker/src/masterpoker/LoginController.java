@@ -31,7 +31,7 @@ public class LoginController implements Initializable
     }
     
     public void login(){
-        if(tfUsername.equals("Melanie") && tfPassword.equals("Brian")){
+        if(tfUsername.getText().equals("Melanie") && tfPassword.getText().equals("Brian")){
             //open Homescreen
         }
         else{

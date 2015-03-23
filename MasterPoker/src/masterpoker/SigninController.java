@@ -8,7 +8,11 @@ package masterpoker;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.SplitPane;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -17,10 +21,28 @@ import javafx.fxml.Initializable;
  */
 public class SigninController implements Initializable
 {
-
+    @FXML Button btnRegister;
+    @FXML TextField tfUsername;
+    @FXML TextField tfPassword;
+    @FXML TextField tfEmail;
+    @FXML SplitPane SPregister;
     /**
      * Initializes the controller class.
      */
+    public void register(){
+        if(!tfUsername.getText().equals("") && !tfPassword.getText().equals("") && !tfEmail.getText().equals("")){
+            //pop up scherm met feedback naar de gebruiker.
+            SPregister.setVisible(true);
+            
+            //terug naar inlog scherm.
+        }
+        else{
+            tfUsername.setText("");
+            tfPassword.setText("");
+            tfEmail.setText("");
+        }
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
