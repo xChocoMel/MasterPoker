@@ -17,7 +17,17 @@ import javafx.fxml.Initializable;
  */
 public class MenuController implements Initializable
 {
-
+    private MasterPoker main;
+    private String user;
+    private int coins;
+    
+    public void setApp(MasterPoker application, String user, int coins)
+    {
+        this.main = application;
+        this.user = user;
+        this.coins = coins;
+    }
+    
     /**
      * Initializes the controller class.
      */

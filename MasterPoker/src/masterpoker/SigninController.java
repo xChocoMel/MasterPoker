@@ -26,6 +26,13 @@ public class SigninController implements Initializable
     @FXML TextField tfPassword;
     @FXML TextField tfEmail;
     @FXML SplitPane SPregister;
+    
+    private MasterPoker main;
+    
+    public void setApp(MasterPoker application)
+    {
+        this.main = application;
+    }
     /**
      * Initializes the controller class.
      */
@@ -47,5 +54,4 @@ public class SigninController implements Initializable
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
 }

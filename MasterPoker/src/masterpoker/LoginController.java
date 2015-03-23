@@ -20,31 +20,40 @@ import javafx.scene.control.TextField;
  */
 
 public class LoginController implements Initializable
-{
+{    
     @FXML Button inlogButton;
     @FXML Button registerButton;
     @FXML TextField tfPassword;
     @FXML TextField tfUsername;
 
-    public void register(){
-        //open register screen
-    }
+    private MasterPoker main;
+    private String user;
+    private int coins;
     
-    public void login(){
-        if(tfUsername.getText().equals("Melanie") && tfPassword.getText().equals("Brian")){
-            //open Homescreen
-        }
-        else{
-            tfUsername.setText("");
-            tfPassword.setText("");
-        }
-    }
+    public void setApp(MasterPoker application)
+    {
+        this.main = application;
+    }    
+    
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    } 
+
+    public void register(){
+        main.goToSignin();
+    }
     
+    public void login(){
+        if(tfUsername.getText().equals("Melanie") && tfPassword.getText().equals("Brian")){
+            main.goToMenu("Melanie", 500);
+        }
+        else{
+            tfUsername.setText("");
+            tfPassword.setText("");
+        }
+    }     
 }
