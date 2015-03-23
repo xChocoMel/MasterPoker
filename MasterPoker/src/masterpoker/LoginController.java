@@ -22,8 +22,6 @@ import javax.swing.JOptionPane;
 
 public class LoginController implements Initializable
 {    
-    @FXML Button inlogButton;
-    @FXML Button registerButton;
     @FXML TextField tfPassword;
     @FXML TextField tfUsername;
 

@@ -10,8 +10,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.SplitPane;
 import javafx.scene.control.TextField;
 import javax.swing.JOptionPane;
 
@@ -22,11 +20,9 @@ import javax.swing.JOptionPane;
  */
 public class SigninController implements Initializable
 {
-    @FXML Button btnRegister;
     @FXML TextField tfUsername;
     @FXML TextField tfPassword;
     @FXML TextField tfEmail;
-    @FXML SplitPane SPregister;
     
     private MasterPoker main;
     
@@ -47,10 +43,10 @@ public class SigninController implements Initializable
         if(!tfUsername.getText().equals("") && !tfPassword.getText().equals("") && !tfEmail.getText().equals(""))
         {
             //pop up scherm met feedback naar de gebruiker.
-            //SPregister.setVisible(true);
             JOptionPane.showMessageDialog(null,"Succesvol aangemeld");
             
             //terug naar inlog scherm.
+            main.goToLogin();
         }
         else if (tfUsername.getText().equals("Melanie"))
         {

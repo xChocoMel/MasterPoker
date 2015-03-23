@@ -74,7 +74,7 @@ public class MenuController implements Initializable
     
     public void startMultiplayer()
     {
-        main.goToSingleplayer(user, coins);
+        main.goToMultiplayer(user, coins);
     } 
     
     public void logout()
