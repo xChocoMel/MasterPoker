@@ -161,15 +161,15 @@ public class MasterPoker extends Application
         
         if (fxml.equals("LoginFXML.fxml"))
         {
-            //this.stage.setMinWidth(400);
-            //this.stage.setMinHeight(236);
-            scene = new Scene(page, 400, 236);
+            this.stage.setMinWidth(200);
+            this.stage.setMinHeight(200);
+            scene = new Scene(page);
         }
         else if (fxml.equals("MenuFXML.fxml"))
         {
-            //this.stage.setMinWidth(921);
-            //this.stage.setMinHeight(500);
-            scene = new Scene(page, 921,500);
+            this.stage.setMinWidth(200);
+            this.stage.setMinHeight(200);
+            scene = new Scene(page);
         }        
         else
         {
