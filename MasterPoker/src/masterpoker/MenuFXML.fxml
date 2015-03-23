@@ -34,17 +34,17 @@
                             <Color blue="0.875" green="0.875" red="0.875" fx:id="x2" />
                           </stroke>
                         </Rectangle>
-                        <Button layoutX="81.0" layoutY="108.0" mnemonicParsing="false" onAction="#startMultiplayer" text="Meedoen" />
+                        <Button id="btn" fx:id="btnJoin1" layoutX="81.0" layoutY="108.0" mnemonicParsing="false" onAction="#startMultiplayer" text="Meedoen" />
                         <Label layoutX="101.0" layoutY="25.0" text="Room1" />
-                        <Label layoutX="71.0" layoutY="67.0" text="Aantal spelers: 5" />
+                        <Label fx:id="lbPlayers1" layoutX="71.0" layoutY="67.0" text="Aantal spelers: 5" />
                       </children>
                     </AnchorPane>
                     <AnchorPane prefHeight="200.0" prefWidth="250.0">
                       <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="159.0" layoutX="0.0" layoutY="0.0" stroke="$x2" strokeType="INSIDE" width="250.0" />
-                        <Button layoutX="81.0" layoutY="108.0" mnemonicParsing="false" onAction="#startMultiplayer" text="Meedoen" />
+                        <Button fx:id="btnJoin2" layoutX="81.0" layoutY="108.0" mnemonicParsing="false" onAction="#startMultiplayer" text="Meedoen" />
                         <Label layoutX="101.0" layoutY="25.0" text="Room2" />
-                        <Label layoutX="71.0" layoutY="67.0" text="Aantal spelers: 2" />
+                        <Label fx:id="lbPlayers2" layoutX="71.0" layoutY="67.0" text="Aantal spelers: 2" />
                       </children>
                     </AnchorPane>
                     <AnchorPane prefHeight="200.0" prefWidth="250.0">
@@ -52,16 +52,16 @@
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="159.0" layoutX="0.0" layoutY="0.0" stroke="$x2" strokeType="INSIDE" width="250.0" />
                         <Button layoutX="81.0" layoutY="108.0" mnemonicParsing="false" onAction="#startMultiplayer" text="Meedoen" />
                         <Label layoutX="101.0" layoutY="25.0" text="Room3" />
-                        <Label layoutX="71.0" layoutY="67.0" text="Aantal spelers: 4" />
+                        <Label fx:id="lbPlayers3" layoutX="71.0" layoutY="67.0" text="Aantal spelers: 4" />
                       </children>
                     </AnchorPane>
                   </children>
                 </HBox>
                 <Label layoutX="30.0" layoutY="30.0" text="Single player" />
                 <Label layoutX="30.0" layoutY="70.0" text="Multiplayer" />
-                <Button layoutX="200.0" layoutY="30.0" mnemonicParsing="false" onAction="#startSingleplayer" text="Single player spel starten" />
-                <Button layoutX="200.0" layoutY="70.0" mnemonicParsing="false" onAction="#startMultiplayer" text="Snel spelen" />
-                <Label layoutX="200.0" layoutY="110.0" text="of kies een game:" />
+                <Button id="btnFastSingle" fx:id="btnSingle" layoutX="200.0" layoutY="30.0" mnemonicParsing="false" onAction="#startSingleplayer" text="Single player spel starten" />
+                <Button fx:id="btnFastMulti" layoutX="200.0" layoutY="70.0" mnemonicParsing="false" onAction="#startMultiplayer" text="Snel spelen" />
+                <Label fx:id="lbChoose" layoutX="200.0" layoutY="110.0" text="of kies een game:" />
               </children>
             </AnchorPane>
           </content>
@@ -71,9 +71,9 @@
             <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
               <children>
                 <ListView fx:id="lvGames" layoutX="30.0" layoutY="60.0" prefHeight="255.0" prefWidth="558.0" />
-                <Label layoutX="30.0" layoutY="30.0" text="Alle multiplayer games" underline="true" />
-                <Button layoutX="607.0" layoutY="247.0" mnemonicParsing="false" onAction="#startMultiplayer" prefHeight="27.0" prefWidth="182.0" text="Nieuwe game starten" />
-                <Button layoutX="607.0" layoutY="288.0" mnemonicParsing="false" onAction="#startMultiplayer" prefHeight="27.0" prefWidth="182.0" text="Meedoen aan game" />
+                <Label fx:id="lbTitle" layoutX="30.0" layoutY="30.0" text="Alle multiplayer games" underline="true" />
+                <Button fx:id="btnNewMulti" layoutX="607.0" layoutY="247.0" mnemonicParsing="false" onAction="#startMultiplayer" prefHeight="27.0" prefWidth="182.0" text="Nieuwe game starten" />
+                <Button fx:id="btnJoinMulti" layoutX="607.0" layoutY="288.0" mnemonicParsing="false" onAction="#startMultiplayer" prefHeight="27.0" prefWidth="182.0" text="Meedoen aan game" />
               </children>
             </AnchorPane>
           </content>
@@ -97,7 +97,7 @@
       <children>
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="52.0" layoutX="0.0" layoutY="0.0" stroke="#bfbfbf" strokeType="INSIDE" width="339.0" />
         <Label fx:id="tfCoins" layoutX="135.0" layoutY="16.0" text="Coins: 100" />
-        <Button id="btnLogout" layoutX="233.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="Uitloggen" />
+        <Button fx:id="btnLogout" layoutX="233.0" layoutY="14.0" mnemonicParsing="false" onAction="#logout" text="Uitloggen" />
         <Label fx:id="tfUser" layoutX="14.0" layoutY="16.0" text="Username" />
         <Separator layoutX="116.0" layoutY="6.0" orientation="VERTICAL" prefHeight="39.961395263671875" />
       </children>
