@@ -49,7 +49,6 @@ public class LoginController implements Initializable
     
     public void login(){
         if(tfUsername.getText().equals("Melanie") && tfPassword.getText().equals("Brian")){
-            main.goToMenu("Melanie", 500);
             user = "Melanie";
             coins = 500;
             main.goToMenu(this.user, this.coins);
