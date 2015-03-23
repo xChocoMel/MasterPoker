@@ -82,8 +82,6 @@ public class MasterPoker extends Application
     
     /**
      * Load MenuFXML.fxml
-     * @param manager
-     * @param user
      */
     protected void goToMenu(String user, int coins)
     {
@@ -100,8 +98,6 @@ public class MasterPoker extends Application
     
     /**
      * Load SingleplayerFXML.fxml
-     * @param manager
-     * @param user
      */
     protected void goToSingleplayer(String user, int coins)
     {
@@ -118,8 +114,6 @@ public class MasterPoker extends Application
     
     /**
      * Load MultiplayerFXML.fxml
-     * @param manager
-     * @param user
      */
     protected void goToMultiplayer(String user, int coins)
     {
