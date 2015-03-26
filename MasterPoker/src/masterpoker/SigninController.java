@@ -83,7 +83,7 @@ public class SigninController implements Initializable
             //terug naar inlog scherm.
             main.goToLogin();
         }
-        else if (tfUsername.getText().equals("Melanie") || tfUsername.getText().equals("Jos"))
+        else if (tfUsername.getText().equals("Jos"))
         {
             if (main.getLanguage().equals("dutch"))
             {
