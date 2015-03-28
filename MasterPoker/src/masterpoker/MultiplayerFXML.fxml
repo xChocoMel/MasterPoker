@@ -2,79 +2,60 @@
 
 <?import java.lang.*?>
 <?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="535.000199999995" prefWidth="773.000199999995" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="masterpoker.MultiplayerController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="770.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="masterpoker.MultiplayerController">
   <children>
-    <Pane layoutX="1.0" layoutY="326.0" prefHeight="198.0" prefWidth="290.0">
+    <AnchorPane id="AnchorPane" layoutX="0.0" layoutY="0.0" prefHeight="535.0" prefWidth="770.0">
       <children>
-        <Button fx:id="btnSend" layoutX="200.0" layoutY="165.0" mnemonicParsing="false" onAction="#sendChatmessage" text="Verstuur" />
-        <TextField fx:id="tfMessage" layoutX="14.0" layoutY="162.0" prefWidth="178.0" />
-        <ScrollPane id="spChat" layoutX="17.0" layoutY="14.0" prefHeight="144.0001220703125" prefWidth="266.0">
-          <content>
-            <ListView fx:id="lvChat" prefHeight="200.0" prefWidth="246.9254150390625" />
-          </content>
-        </ScrollPane>
-      </children>
-    </Pane>
-    <ImageView fitHeight="74.96537540163816" fitWidth="246.9254150390625" layoutX="23.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-        <Image url="@images/Logo.jpg" />
-      </image>
-    </ImageView>
-    <Button fx:id="btnMenu" layoutX="76.0" layoutY="167.0" mnemonicParsing="false" onAction="#quitGame" text="Terug naar menu" />
-    <Pane layoutX="301.0" layoutY="23.0" prefHeight="331.0" prefWidth="450.0">
-      <children>
-        <ImageView fitHeight="275.1374215813638" fitWidth="417.1047058105469" layoutX="17.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="74.96537540163816" fitWidth="246.9254150390625" layoutX="28.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
           <image>
-            <Image url="@images/poker-table.png" />
+            <Image url="@images/Logo.jpg" />
           </image>
         </ImageView>
-<<<<<<< HEAD
-        <Label fx:id="txtSpeler2" layoutX="204.0" layoutY="0.0" text="Speler 2">
-=======
-        <Label fx:id="lbPlayer2" layoutX="196.0" layoutY="0.0" text="Speler 2">
->>>>>>> origin/master
-          <font>
-            <Font size="16.0" fx:id="x1" />
-          </font>
-        </Label>
-<<<<<<< HEAD
-        <Label fx:id="txtSpeler6" font="$x1" layoutX="22.0" layoutY="282.0" text="Speler 6" />
-        <Label fx:id="txtSpeler1" font="$x1" layoutX="22.0" layoutY="15.0" text="Speler 1" />
-        <Label fx:id="txtSpeler4" font="$x1" layoutX="385.0" layoutY="275.0" text="Speler 4" />
-        <Label fx:id="txtSpeler5" font="$x1" layoutX="205.0" layoutY="296.0" text="Speler 5" />
-        <Label fx:id="txtSpeler3" font="$x1" layoutX="366.0" layoutY="14.0" prefHeight="23.9609375" prefWidth="58.0" text="Speler 3" textFill="BLACK" />
-=======
-        <Label id="lbPlayer5" fx:id="lbPlayer6" font="$x1" layoutX="22.0" layoutY="282.0" text="Speler 6" />
-        <Label fx:id="lbPlayer1" font="$x1" layoutX="22.0" layoutY="15.0" text="Speler 1" />
-        <Label fx:id="lbPlayer4" font="$x1" layoutX="385.0" layoutY="275.0" text="Speler 4" />
-        <Label fx:id="lbPlayer5" font="$x1" layoutX="205.0" layoutY="296.0" text="Speler 5" />
-        <Label fx:id="lbPlayer3" font="$x1" layoutX="366.0" layoutY="14.0" prefHeight="23.9609375" prefWidth="58.0" text="Speler 3" textFill="BLACK" />
->>>>>>> origin/master
+        <Button fx:id="btnMenu" layoutX="81.0" layoutY="167.0" mnemonicParsing="false" onAction="#quitGame" text="Terug naar menu" />
+        <Pane layoutX="306.0" layoutY="23.0" prefHeight="331.0" prefWidth="450.0">
+          <children>
+            <ImageView fitHeight="275.1374215813638" fitWidth="417.1047058105469" layoutX="17.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@images/poker-table.png" />
+              </image>
+            </ImageView>
+            <Label fx:id="lbPlayer2" layoutX="204.0" layoutY="0.0" text="CPU 1">
+              <font>
+                <Font size="16.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label fx:id="lbPlayer6" font="$x1" layoutX="22.0" layoutY="282.0" text="CPU 5" />
+            <Label id="lbPlayer" fx:id="lbPlayer1" font="$x1" layoutX="22.0" layoutY="15.0" text="Speler 1" />
+            <Label fx:id="lbPlayer4" font="$x1" layoutX="385.0" layoutY="275.0" text="CPU 3" />
+            <Label fx:id="lbPlayer5" font="$x1" layoutX="205.0" layoutY="296.0" text="CPU 4" />
+            <Label fx:id="lbPlayer3" font="$x1" layoutX="366.0" layoutY="14.0" prefHeight="23.9609375" prefWidth="58.0" text="CPU 2" textFill="BLACK" />
+          </children>
+        </Pane>
+        <Pane layoutX="328.0" layoutY="369.0" prefHeight="144.0" prefWidth="417.104736328125">
+          <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efefef" height="144.0" layoutX="0.0" layoutY="0.0" stroke="#bfbfbf" strokeType="INSIDE" width="418.0" />
+            <Button id="btnCall" fx:id="btnRaise" layoutX="135.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Inzetten" />
+            <Button fx:id="btnFold" layoutX="23.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Passen" />
+            <Button id="btnRaise" fx:id="btnCall" layoutX="245.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.00009999999747" text="Meegaan" />
+            <CheckBox fx:id="chAuto" layoutX="23.0" layoutY="104.0" mnemonicParsing="false" text="Altijd meegaan" />
+            <Label fx:id="txtCoins" font="$x1" layoutX="23.0" layoutY="23.0" text="Coins:" />
+          </children>
+        </Pane>
+        <Pane layoutX="28.0" layoutY="313.0" prefHeight="200.0" prefWidth="278.0">
+          <children>
+            <TextField fx:id="tfMessage" layoutX="14.0" layoutY="164.0" prefWidth="200.0" />
+            <Button fx:id="btnSend" layoutX="214.0" layoutY="166.0" mnemonicParsing="false" onAction="#sendChatmessage" text="Verstuur" />
+            <ListView fx:id="lvChat" layoutX="14.0" layoutY="14.0" prefHeight="150.86257934570312" prefWidth="256.0" />
+          </children>
+        </Pane>
       </children>
-    </Pane>
-    <Pane layoutX="333.0" layoutY="369.0" prefHeight="144.0" prefWidth="417.104736328125">
-      <children>
-        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efefef" height="144.0" layoutX="0.0" layoutY="0.0" stroke="#bfbfbf" strokeType="INSIDE" width="418.0" />
-<<<<<<< HEAD
-        <Button fx:id="btnInzetten" layoutX="135.0" layoutY="64.0" mnemonicParsing="false" onAction="#inzetten" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Inzetten" />
-        <Button fx:id="btnPassen" layoutX="23.0" layoutY="64.0" mnemonicParsing="false" onAction="#passen" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Passen" />
-        <Button fx:id="btnMeegaan" layoutX="245.0" layoutY="64.0" mnemonicParsing="false" onAction="#meegaan" prefHeight="26.951171875" prefWidth="94.00009999999747" text="Meegaan" />
-        <CheckBox layoutX="23.0" layoutY="104.0" mnemonicParsing="false" text="Altijd meegaan" />
-=======
-        <Button fx:id="btnRaise" layoutX="135.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Inzetten" />
-        <Button id="btnPass" fx:id="btnFold" layoutX="23.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Passen" />
-        <Button id="btnCheck" fx:id="btnCall" layoutX="245.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.00009999999747" text="Meegaan" />
-        <CheckBox fx:id="chAuto" layoutX="23.0" layoutY="104.0" mnemonicParsing="false" text="Altijd meegaan" />
->>>>>>> origin/master
-        <Label fx:id="txtCoins" font="$x1" layoutX="23.0" layoutY="23.0" text="Coins:" />
-      </children>
-    </Pane>
+    </AnchorPane>
   </children>
 </AnchorPane>

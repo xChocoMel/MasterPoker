@@ -131,30 +131,30 @@ public class MultiplayerController implements Initializable
         main.goToMenu(user, coins);
     }
 
-    public void inzetten() throws InterruptedException {
-      /*  txtSpeler1.setTextFill(Color.BLACK);
+  /*  public void inzetten() throws InterruptedException {
+        txtSpeler1.setTextFill(Color.BLACK);
         btnMeegaan.setDisable(true);
         btnPassen.setDisable(true);
         btnInzetten.setDisable(true);
-        startTimer(); */
+        startTimer(); 
 
     }
 
     public void passen() {
-       /* txtSpeler1.setTextFill(Color.BLACK);
+        txtSpeler1.setTextFill(Color.BLACK);
         btnMeegaan.setDisable(true);
         btnPassen.setDisable(true);
         btnInzetten.setDisable(true);
-        startTimer(); */
+        startTimer(); 
     }
 
     public void meegaan() {
-     /*   txtSpeler1.setTextFill(Color.BLACK);
+        txtSpeler1.setTextFill(Color.BLACK);
         btnMeegaan.setDisable(true);
         btnPassen.setDisable(true);
         btnInzetten.setDisable(true);
-        startTimer();*/
-    }
+        startTimer();
+    }*/
 
     public void sendChatmessage()
     {
