@@ -16,7 +16,7 @@
         <Image url="@images/Logo.jpg" />
       </image>
     </ImageView>
-    <Button layoutX="81.0" layoutY="167.0" mnemonicParsing="false" onAction="#quitGame" text="Terug naar menu" />
+    <Button fx:id="btnMenu" layoutX="81.0" layoutY="167.0" mnemonicParsing="false" onAction="#quitGame" text="Terug naar menu" />
     <Pane layoutX="306.0" layoutY="23.0" prefHeight="331.0" prefWidth="450.0">
       <children>
         <ImageView fitHeight="275.1374215813638" fitWidth="417.1047058105469" layoutX="17.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
@@ -30,7 +30,7 @@
           </font>
         </Label>
         <Label font="$x1" layoutX="22.0" layoutY="282.0" text="CPU 5" />
-        <Label font="$x1" layoutX="22.0" layoutY="15.0" text="Speler 1" />
+        <Label fx:id="lbPlayer" font="$x1" layoutX="22.0" layoutY="15.0" text="Speler 1" />
         <Label font="$x1" layoutX="385.0" layoutY="275.0" text="CPU 3" />
         <Label font="$x1" layoutX="205.0" layoutY="296.0" text="CPU 4" />
         <Label font="$x1" layoutX="366.0" layoutY="14.0" prefHeight="23.9609375" prefWidth="58.0" text="CPU 2" textFill="BLACK" />
@@ -39,10 +39,10 @@
     <Pane layoutX="328.0" layoutY="369.0" prefHeight="144.0" prefWidth="417.104736328125">
       <children>
         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#efefef" height="144.0" layoutX="0.0" layoutY="0.0" stroke="#bfbfbf" strokeType="INSIDE" width="418.0" />
-        <Button layoutX="135.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Inzetten" />
-        <Button layoutX="23.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Passen" />
-        <Button layoutX="245.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.00009999999747" text="Meegaan" />
-        <CheckBox layoutX="23.0" layoutY="104.0" mnemonicParsing="false" text="Altijd meegaan" />
+        <Button fx:id="btnCall" layoutX="135.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Inzetten" />
+        <Button fx:id="btnFold" layoutX="23.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.0001220703125" text="Passen" />
+        <Button fx:id="btnRaise" layoutX="245.0" layoutY="64.0" mnemonicParsing="false" prefHeight="26.951171875" prefWidth="94.00009999999747" text="Meegaan" />
+        <CheckBox fx:id="chAuto" layoutX="23.0" layoutY="104.0" mnemonicParsing="false" text="Altijd meegaan" />
         <Label fx:id="txtCoins" font="$x1" layoutX="23.0" layoutY="23.0" text="Coins:" />
       </children>
     </Pane>

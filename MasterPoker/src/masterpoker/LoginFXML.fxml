@@ -8,18 +8,36 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.shape.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="443.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="masterpoker.LoginController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="443.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="masterpoker.LoginController">
   <children>
-    <ImageView fitHeight="121.99998474121094" fitWidth="401.85083594205287" layoutX="22.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="121.99998474121094" fitWidth="401.85083594205287" layoutX="21.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@images/Logo.jpg" />
       </image>
     </ImageView>
-    <TextField fx:id="tfUsername" layoutX="150.0" layoutY="161.0" prefWidth="272.850830078125" promptText="Voer uw Gebruikersnaam in" />
-    <TextField fx:id="tfPassword" layoutX="150.0" layoutY="198.0" prefWidth="273.0" promptText="Voer uw wachtwoord in" />
-    <Label layoutX="22.0" layoutY="164.0" text="Gebruikersnaam:" />
-    <Label layoutX="22.0" layoutY="201.0" text="Wachtwoord:" />
-    <Button id="aanmeldButton" layoutX="150.0" layoutY="239.0" mnemonicParsing="false" onAction="#register" prefWidth="127.0" text="Aanmelden" />
-    <Button id="loginButton" layoutX="296.0" layoutY="239.0" mnemonicParsing="false" onAction="#login" prefWidth="127.0" text="Inloggen" />
+    <TextField fx:id="tfUsername" layoutX="149.0" layoutY="208.0" prefWidth="272.850830078125" promptText="Voer uw Gebruikersnaam in" />
+    <TextField fx:id="tfPassword" layoutX="149.0" layoutY="245.0" prefWidth="273.0" promptText="Voer uw wachtwoord in" />
+    <Label fx:id="lbUsername" layoutX="21.0" layoutY="211.0" text="Gebruikersnaam:" />
+    <Label fx:id="lbPassword" layoutX="21.0" layoutY="248.0" text="Wachtwoord:" />
+    <Button id="aanmeldButton" fx:id="btnSignin" layoutX="148.0" layoutY="286.0" mnemonicParsing="false" onAction="#register" prefWidth="127.0" text="Aanmelden" />
+    <Button id="loginButton" fx:id="btnLogin" layoutX="294.0" layoutY="286.0" mnemonicParsing="false" onAction="#login" prefWidth="127.0" text="Inloggen" />
+    <Button layoutX="319.0" layoutY="14.0" minHeight="46.0" minWidth="47.0" mnemonicParsing="false" onAction="#setDutch" prefHeight="46.0" prefWidth="47.0" text="">
+      <graphic>
+        <ImageView fitHeight="38.0" fitWidth="37.56321982450263" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/dutch.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
+    <Button layoutX="376.0" layoutY="14.0" minHeight="46.0" minWidth="47.0" mnemonicParsing="false" onAction="#setEnglish" prefHeight="46.0" prefWidth="47.0" text="">
+      <graphic>
+        <ImageView fitHeight="38.0" fitWidth="37.56321982450263" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@images/english.png" />
+          </image>
+        </ImageView>
+      </graphic>
+    </Button>
   </children>
 </AnchorPane>

@@ -10,6 +10,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 
 /**
@@ -19,7 +21,13 @@ import javafx.scene.control.Label;
  */
 public class SingleplayerController implements Initializable
 {    
+    @FXML Label lbPlayer;
     @FXML Label txtCoins;
+    @FXML Button btnMenu;
+    @FXML Button btnFold;
+    @FXML Button btnCall;
+    @FXML Button btnRaise;
+    @FXML CheckBox chAuto;
     
     private MasterPoker main;
     private String user;
@@ -31,7 +39,26 @@ public class SingleplayerController implements Initializable
         this.user = user;
         this.coins = coins;
         
-        txtCoins.setText("Coins: " + this.coins);
+        lbPlayer.setText(this.user);
+        
+        if (main.getLanguage().equals("dutch"))
+        {
+            txtCoins.setText("Munten: " + this.coins);
+            btnMenu.setText("Terug naar menu");
+            btnFold.setText("Passen");
+            btnCall.setText("Meegaan");
+            btnRaise.setText("Inzetten");
+            chAuto.setText("Altijd meegaan");            
+        }
+        else if (main.getLanguage().equals("english"))
+        {
+            txtCoins.setText("Coins: " + this.coins);
+            btnMenu.setText("Back to menu");
+            btnFold.setText("Fold");
+            btnCall.setText("Call");
+            btnRaise.setText("Raise");
+            chAuto.setText("Always call");
+        }
     }
 
     /**
