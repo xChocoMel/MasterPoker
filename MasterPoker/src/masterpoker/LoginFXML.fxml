@@ -17,8 +17,8 @@
     </ImageView>
     <TextField fx:id="tfUsername" layoutX="149.0" layoutY="208.0" prefWidth="272.850830078125" promptText="Voer uw Gebruikersnaam in" />
     <TextField fx:id="tfPassword" layoutX="149.0" layoutY="245.0" prefWidth="273.0" promptText="Voer uw wachtwoord in" />
-    <Label fx:id="lbUsername" layoutX="21.0" layoutY="211.0" text="Gebruikersnaam:" />
-    <Label fx:id="lbPassword" layoutX="21.0" layoutY="248.0" text="Wachtwoord:" />
+    <Label fx:id="lbUsername" layoutX="21.0" layoutY="211.0" text="Gebruikersnaam" />
+    <Label fx:id="lbPassword" layoutX="21.0" layoutY="248.0" text="Wachtwoord" />
     <Button id="aanmeldButton" fx:id="btnSignin" layoutX="148.0" layoutY="286.0" mnemonicParsing="false" onAction="#register" prefWidth="127.0" text="Aanmelden" />
     <Button id="loginButton" fx:id="btnLogin" layoutX="294.0" layoutY="286.0" mnemonicParsing="false" onAction="#login" prefWidth="127.0" text="Inloggen" />
     <Button layoutX="319.0" layoutY="14.0" minHeight="46.0" minWidth="47.0" mnemonicParsing="false" onAction="#setDutch" prefHeight="46.0" prefWidth="47.0" text="">
