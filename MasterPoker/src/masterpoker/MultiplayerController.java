@@ -16,62 +16,21 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-<<<<<<< HEAD
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 import javax.swing.Timer;
-=======
+
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
->>>>>>> origin/master
 
 /**
  * FXML Controller class
  *
  * @author Melanie
  */
-<<<<<<< HEAD
-public class MultiplayerController implements Initializable {
 
-    @FXML
-    Label txtCoins;
-    @FXML
-    Label txtSpeler1;
-    @FXML
-    Label txtSpeler2;
-    @FXML
-    Label txtSpeler3;
-    @FXML
-    Label txtSpeler4;
-    @FXML
-    Label txtSpeler5;
-    @FXML
-    Label txtSpeler6;
-    @FXML
-    Button btnPassen;
-    @FXML
-    Button btnMeegaan;
-    @FXML
-    Button btnInzetten;
-
-    private MasterPoker main;
-    private String user;
-    private int coins;
-    private int count = 0;
-    private int maxcount = 5;
-    Timer timer;
-
-    public void setApp(MasterPoker application, String user, int coins) {
-        this.main = application;
-        this.user = user;
-        this.coins = coins;
-
-        txtCoins.setText("Coins: " + this.coins);
-        txtSpeler1.setText(this.user);
-        txtSpeler1.setTextFill(Color.RED);
-=======
 public class MultiplayerController implements Initializable
 {
     @FXML Label txtCoins;
@@ -135,19 +94,12 @@ public class MultiplayerController implements Initializable
             lbPlayer5.setText("Player 5");
             lbPlayer6.setText("Player 6");
         }
->>>>>>> origin/master
     }
 
     /**
      * Initializes the controller class.
      */
     @Override
-<<<<<<< HEAD
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
-
-=======
     public void initialize(URL url, ResourceBundle rb)
     {
         messages = new ArrayList();
@@ -156,10 +108,8 @@ public class MultiplayerController implements Initializable
         
         oMessages = FXCollections.observableList(messages);        
         lvChat.setItems(oMessages);
-    }   
->>>>>>> origin/master
-    
-    public void startTimer() {
+    }       
+   /* public void startTimer() {
         count = 0;
          timer = new Timer(1000, (ActionEvent ae) -> {
             if(count < maxcount)
@@ -175,49 +125,42 @@ public class MultiplayerController implements Initializable
             }
         });
           timer.start();
-    }
+    }*/
 
     public void quitGame() {
         main.goToMenu(user, coins);
     }
-<<<<<<< HEAD
 
     public void inzetten() throws InterruptedException {
-        txtSpeler1.setTextFill(Color.BLACK);
+      /*  txtSpeler1.setTextFill(Color.BLACK);
         btnMeegaan.setDisable(true);
         btnPassen.setDisable(true);
         btnInzetten.setDisable(true);
-        startTimer();
+        startTimer(); */
 
     }
 
     public void passen() {
-        txtSpeler1.setTextFill(Color.BLACK);
+       /* txtSpeler1.setTextFill(Color.BLACK);
         btnMeegaan.setDisable(true);
         btnPassen.setDisable(true);
         btnInzetten.setDisable(true);
-        startTimer();
+        startTimer(); */
     }
 
     public void meegaan() {
-        txtSpeler1.setTextFill(Color.BLACK);
+     /*   txtSpeler1.setTextFill(Color.BLACK);
         btnMeegaan.setDisable(true);
         btnPassen.setDisable(true);
         btnInzetten.setDisable(true);
-        startTimer();
+        startTimer();*/
     }
 
-    public void resetButtons() {
-        btnMeegaan.setDisable(false);
-        btnPassen.setDisable(false);
-        btnInzetten.setDisable(false);
-=======
-    
     public void sendChatmessage()
     {
         String message = tfMessage.getText();
         oMessages.add(this.user + " - " + message);
         tfMessage.setText("");
->>>>>>> origin/master
+
     }
 }
